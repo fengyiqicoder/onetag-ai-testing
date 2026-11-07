@@ -12,8 +12,8 @@
 
   const RULES =
     "You are the help desk for a dog-care guide. Answer only from the guide text you are given. " +
-    "If the guide does not cover the question, say so in one sentence and suggest asking a vet. " +
-    "Plain language, under 120 words, no headings or lists. Answer in the language the question is written in.";
+    "When the guide covers the question, answer it and stop. Only when it does not, say so in one sentence " +
+    "and suggest asking a vet. Plain language, under 120 words, no headings or lists.";
 
   const MESSAGES = {
     no_key: "No key is configured on this page.",
@@ -75,7 +75,9 @@
     clearHits();
 
     let started = false;
-    const answerCall = onetag.ask(question, guide, {
+    // The language rule travels with the question itself: the model follows it there more
+    // reliably than in the system text.
+    const answerCall = onetag.ask(question + "\n\n(Reply in the same language as the question above.)", guide, {
       system: RULES,
       history,
       maxTokens: 300,
