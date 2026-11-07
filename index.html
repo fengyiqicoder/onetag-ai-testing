@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sit. Stay. Ask. A dog-care guide you can question</title>
+<meta name="description" content="A dog-care guide for new owners that answers your questions. Feeding, health, training, daily life and emergencies, answered from the guide itself with OneTag AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,600;9..144,400,100&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://onetagai.com/v1.js" data-key="ha_6zykVftfFxXn2CqwAgz4KvkS"></script>
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./">Sit. Stay. Ask.</a>
+  <nav><a href="#guide">The guide</a><a href="#how">How it works</a></nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>A dog-care guide you can question.</h1>
+    <p class="lede">Twenty-five answers for new dog owners, covering feeding, health, training, daily life and emergencies. Type a question and the guide answers from its own pages, nothing else.</p>
+
+    <form id="ask" class="ask" autocomplete="off">
+      <label for="q" class="visually-hidden">Your question</label>
+      <input id="q" name="q" type="text" placeholder="Why does my puppy bite my hands?" maxlength="400" required>
+      <button type="submit" id="ask-btn">Ask the guide</button>
+    </form>
+
+    <div class="chips" aria-label="Example questions">
+      <button type="button" data-q="How often should I feed a 4 month old puppy?">Feeding a 4-month-old</button>
+      <button type="button" data-q="When can my puppy go for walks outside?">First walks</button>
+      <button type="button" data-q="My dog ate some grapes, what should I do?">Ate grapes</button>
+      <button type="button" data-q="我的狗拉绳子拉得很厉害怎么办？">狗拉绳怎么办</button>
+    </div>
+
+    <div id="status" class="status" aria-live="polite"></div>
+    <div id="answer-wrap" class="answer-wrap" hidden>
+      <p id="answer" class="answer"></p>
+      <p id="related" class="related"></p>
+      <p class="followup">You can ask a follow-up in the same box. <button type="button" id="reset" class="link">Start over</button></p>
+    </div>
+  </section>
+
+  <section id="guide" class="guide">
+    <h2 class="guide-title">The guide</h2>
+    <p class="note">General guidance for healthy pet dogs, not veterinary advice. Anything urgent: call a vet.</p>
+
+    <h2>Feeding</h2>
+    <article class="entry" id="q1"><h3>How often should I feed a puppy?</h3><p>Puppies under 6 months eat 3 meals a day, 6 to 12 months 2 meals, adults 1 or 2 meals at the same times each day. Measure portions by the bag's guide for the dog's expected adult weight, then adjust to body condition: you should feel the ribs easily but not see them.</p></article>
+    <article class="entry" id="q2"><h3>Which foods are dangerous for dogs?</h3><p>Chocolate, grapes and raisins, onions and garlic, xylitol (in sugar-free gum and some peanut butters), macadamia nuts, alcohol, cooked bones and raw bread dough. If a dog eats any of these, call a vet or an animal poison line right away, even if the dog seems fine.</p></article>
+    <article class="entry" id="q3"><h3>Can I give my dog table scraps?</h3><p>Small amounts of plain cooked meat, carrot, apple slices without seeds, green beans and plain rice are fine as treats. Keep all treats under 10% of daily calories. Skip anything fatty, salty or spiced, and anything on the dangerous-foods list.</p></article>
+    <article class="entry" id="q4"><h3>When should I switch from puppy food to adult food?</h3><p>Small breeds at about 9 to 12 months, large breeds at 12 to 18 months. Change over 7 to 10 days, mixing a little more of the new food in each day, so the stomach has time to adjust.</p></article>
+    <article class="entry" id="q5"><h3>How much water does a dog need?</h3><p>Roughly 50 to 60 ml per kilogram of body weight a day, more in heat or after exercise. Keep fresh water available at all times. A sudden, lasting increase in drinking is a reason to see a vet.</p></article>
+
+    <h2>Health</h2>
+    <article class="entry" id="q6"><h3>What vaccines does a puppy need and when?</h3><p>The core shots (distemper, parvovirus and adenovirus, usually combined as DHPP) at about 8, 12 and 16 weeks, then a booster at one year. Rabies between 12 and 16 weeks where the law requires it. Your vet sets the exact schedule for your area.</p></article>
+    <article class="entry" id="q7"><h3>When can my puppy go outside?</h3><p>Short outings in your arms can start right away, because meeting people, sounds and places early matters. Walks on the ground can begin 1 to 2 weeks after the last puppy shot, around 16 to 18 weeks. Avoid dog parks and unknown dogs until then.</p></article>
+    <article class="entry" id="q8"><h3>How do I know if my dog is sick?</h3><p>Normal body temperature is 38 to 39.2°C. See a vet the same day for not eating for more than a day, repeated vomiting, diarrhea with blood, unusual tiredness, pale gums or trouble breathing.</p></article>
+    <article class="entry" id="q9"><h3>How often should my dog see the vet?</h3><p>Puppies every 3 to 4 weeks until the shots are done. Adults once a year. Seniors, from about 7 years for large breeds and 9 for small, twice a year with blood work.</p></article>
+    <article class="entry" id="q10"><h3>Do I need flea, tick and worm prevention?</h3><p>Yes, year-round in most climates. A monthly chewable or spot-on covers fleas and ticks. Deworm on the vet's schedule: puppies every 2 weeks until 12 weeks, then monthly until 6 months. Where there are mosquitoes, monthly heartworm prevention too.</p></article>
+    <article class="entry" id="q11"><h3>When should I spay or neuter?</h3><p>Commonly between 6 and 12 months. Many vets now wait until 12 to 18 months for large breeds so the joints finish growing. Decide the timing with your vet.</p></article>
+
+    <h2>Training</h2>
+    <article class="entry" id="q12"><h3>How do I house-train a puppy?</h3><p>Take the puppy out after waking, after eating, after play and every 1 to 2 hours at first. Reward within 2 seconds of finishing outside. Never punish accidents; clean them with an enzyme cleaner so the smell doesn't invite a repeat. Most puppies are reliable by 4 to 6 months.</p></article>
+    <article class="entry" id="q13"><h3>Why does my puppy bite my hands, and how do I stop it?</h3><p>Mouthing is normal play and teething. When teeth touch skin, say "ouch" calmly, go still and offer a toy instead. If it continues, end play for 20 to 30 seconds. With consistency it fades, usually by 6 to 7 months.</p></article>
+    <article class="entry" id="q14"><h3>How long should training sessions be?</h3><p>3 to 5 minutes for puppies, up to 10 or 15 for adults, a few times a day. End on a success. Use pea-sized treats so the dog doesn't fill up.</p></article>
+    <article class="entry" id="q15"><h3>Should I crate-train?</h3><p>A crate the dog can stand up and turn around in, introduced with treats and meals inside, becomes a safe spot and makes house-training easier. Never use it as punishment. Puppies under 6 months should not be crated more than 3 to 4 hours at a stretch during the day.</p></article>
+    <article class="entry" id="q16"><h3>My dog pulls on the leash. What do I do?</h3><p>Stop walking the moment the leash goes tight, wait for slack, then carry on. Reward the dog for walking next to you. A front-clip harness helps while you train. Pulling takes weeks of consistent practice to change.</p></article>
+    <article class="entry" id="q17"><h3>How do I teach "come"?</h3><p>Start indoors with no distractions. Say the dog's name and "come" once in a happy voice, reward generously on arrival, and never call the dog for something unpleasant. Practise on a long line before going off-leash anywhere.</p></article>
+
+    <h2>Daily life</h2>
+    <article class="entry" id="q18"><h3>How much exercise does my dog need?</h3><p>Most adult dogs need 30 to 60 minutes a day; working and sporting breeds up to 2 hours. Puppies: about 5 minutes of structured walking per month of age, twice a day, plus free play. Sniffing walks and puzzle toys tire a dog as much as running.</p></article>
+    <article class="entry" id="q19"><h3>How often should I bathe and groom my dog?</h3><p>Bathe every 4 to 8 weeks unless the dog is dirty; more often dries the skin. Brush short coats weekly and long or double coats several times a week. Trim nails every 3 to 4 weeks; clicking on the floor means they are too long. Brush teeth a few times a week.</p></article>
+    <article class="entry" id="q20"><h3>How do I help my dog with separation anxiety?</h3><p>Practise short absences and lengthen them gradually. Leave without a fuss and come back calmly. Leave a stuffed food toy and exercise the dog before you go. If the dog panics, destroys things, drools or howls for long stretches, ask a vet or a certified trainer; some dogs need medication alongside training.</p></article>
+    <article class="entry" id="q21"><h3>How do I introduce a new dog to my cat or other dog?</h3><p>Separate spaces first and swap bedding for a few days so they learn each other's scent. Then short leashed meetings on neutral ground, rewarding calm behaviour, ending before anyone gets tense. Full freedom together can take weeks.</p></article>
+    <article class="entry" id="q22"><h3>Can my dog be outside in hot or cold weather?</h3><p>Above 30°C, walk early morning and evening, test the pavement with the back of your hand for 7 seconds, and never leave a dog in a car. Below 0°C, keep walks short for small, thin-coated or old dogs; a coat helps. Shivering, lifting paws or slowing down means go inside.</p></article>
+
+    <h2>Emergencies</h2>
+    <article class="entry" id="q23"><h3>What are the signs of bloat?</h3><p>A swollen, hard belly, retching without bringing anything up, restlessness and drooling, most often in deep-chested large breeds after a meal. It can kill within hours. Go to an emergency vet immediately.</p></article>
+    <article class="entry" id="q24"><h3>What should I do if my dog eats something toxic?</h3><p>Call a vet or an animal poison line at once with the product name and the amount. Do not make the dog vomit unless a professional tells you to. Keep the packaging to show them.</p></article>
+    <article class="entry" id="q25"><h3>My dog got stung by a bee. What now?</h3><p>Scrape the stinger out, hold a cold compress on the spot and watch the dog for 30 minutes. Swelling of the face, trouble breathing, vomiting or collapse means an emergency vet visit right away.</p></article>
+  </section>
+
+  <section id="how" class="how">
+    <h2>How it works</h2>
+    <p>This is a static page on GitHub Pages. There is no server behind it. One script tag loads <a href="https://onetagai.com/?ref=onetag-ai-testing">OneTag AI</a>, and when you ask a question the page hands the guide above to <code>onetag.ask</code> together with your question. The answer streams back into the page. A second call asks for the three most relevant entries as JSON, which become the links under the answer.</p>
+<pre><code>&lt;script src="https://onetagai.com/v1.js" data-key="YOUR_ONETAG_KEY"&gt;&lt;/script&gt;
+&lt;script type="module"&gt;
+  const guide = document.querySelector("#guide");
+  const answer = await onetag.ask(question, guide, {
+    system: "Answer only from the guide. If it is not covered, say so.",
+    history,                                   // earlier turns, for follow-ups
+    stream: (delta) =&gt; { out.textContent += delta; },
+  });
+&lt;/script&gt;</code></pre>
+    <p>The key in the page source is public by design. Every key has a token allowance; when this one runs out, the box says so. <a href="https://onetagai.com/?ref=onetag-ai-testing">Get your own key</a> to put a question box on your own site.</p>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>Made as a test of <a href="https://onetagai.com/?ref=onetag-ai-testing">OneTag AI</a>. Source on <a href="https://github.com/fengyiqicoder/onetag-ai-testing">GitHub</a>.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
