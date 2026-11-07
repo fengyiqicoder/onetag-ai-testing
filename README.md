@@ -20,7 +20,11 @@ It is a static page with no backend. One script tag loads [OneTag AI](https://on
 </script>
 ```
 
-The key in `index.html` is public by design; every key has a token allowance. [Get your own key](https://onetagai.com/?ref=onetag-ai-testing) to do the same on your site.
+The key in `index.html` is public by design; every key has a token allowance. Get your own at [onetagai.com](https://onetagai.com/?ref=onetag-ai-testing), or with one request (the key arrives in that inbox):
+
+```bash
+curl -X POST https://onetagai.com/api/signup -H "Content-Type: application/json" -d '{"email":"you@example.com"}'
+```
 
 ## Files
 
